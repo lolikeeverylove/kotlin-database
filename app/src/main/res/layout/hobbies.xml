@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutVert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <yanzhikai.textpath.SyncTextPathView
+        android:id="@+id/stpv_2017"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:duration="12000"
+        app:showPainter="true"
+        app:text="2017"
+        app:textInCenter="true"
+        app:textSize="60sp"
+        android:layout_weight="1"
+        />
+
+    <yanzhikai.textpath.AsyncTextPathView
+        android:id="@+id/atpv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:duration="12000"
+        app:showPainter="true"
+        app:text="Registration"
+
+        app:textInCenter="true"
+        app:textSize="62sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_topRightRadius="10dp"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="2dp"
+        >
+        <EditText
+            android:id="@+id/pass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="pass"
+            android:inputType="textPassword"
+            app:met_baseColor="#0056d3"
+            app:met_errorColor="#ddaa00"
+            app:met_primaryColor="#982360"
+            app:met_minCharacters="6"
+            app:met_helperText="only numbers"
+            />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:met_baseColor="#0056d3"
+        app:met_errorColor="#ddaa00"
+        app:met_primaryColor="#982360"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:met_baseColor="#0056d3"
+        app:met_errorColor="#ddaa00"
+        app:met_primaryColor="#982360" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="pass"
+        android:inputType="textPassword"
+        app:met_baseColor="#0056d3"
+        app:met_errorColor="#ddaa00"
+        app:met_primaryColor="#982360"
+        app:met_minCharacters="6"
+        app:met_helperText="only numbers"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:inputType="phone"
+        app:met_baseColor="#0056d3"
+        app:met_errorColor="#ddaa00"
+        app:met_primaryColor="#982360" />
+<!--    <EditText-->
+<!--        android:id="@+id/name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/email"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textEmailAddress"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/pass1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:text="12342343"-->
+<!--        android:inputType="textPassword" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/phone"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="phone" />-->
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>
